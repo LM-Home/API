@@ -1,0 +1,9 @@
+bs4
+lxml
+ecdsa
+quickjs
+fastapi
+uvicorn
+requests
+python-multipart
+ddddocr>=1.3.1

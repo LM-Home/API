@@ -1,0 +1,100 @@
+{
+  "Alist": {
+    "小雅": "http://alist.xiaoya.pro",
+    "杜比": "https://dubi.tk",
+    "七米蓝": "https://al.chirmyram.com",
+    "触光云盘": "https://pan.ichuguang.com"
+  },
+  "Ali": {
+    "token": "https://sharetoken.lm317379829.repl.co/token?iv=1&key=1"
+  },
+  "YSDQ": {
+    "thlimit": 5,
+    "searchList": "qq,cz,bb,wogg,qy,ps,yp",
+    "speedLimit": "1K",
+    "disableIPV6": "no",
+    "ocrurl": "https://ddddocr.lm317379829.repl.co",
+    "CJapi": [
+      {
+        "name": "量子",
+        "api": "https://cj.lziapi.com/api.php/provide/vod/from/lzm3u8/"
+      },
+      {
+        "name": "非凡",
+        "api": "http://svip.ffzyapi8.com/api.php/provide/vod/from/ffm3u8/"
+      }
+    ],
+    "adrules": [
+      {
+        "name": "星星",
+        "hosts": [
+          "aws.ulivetv.net"
+        ],
+        "regex": [
+          "#EXT-X-DISCONTINUITY\\n#EXTINF:8,\\n(?:.|\\n)*?#EXT-X-DISCONTINUITY\\n",
+          "#EXT-X-DISCONTINUITY\\n#EXTINF:9,\\n(?:.|\\n)*?#EXT-X-DISCONTINUITY\\n"
+        ]
+      },
+      {
+        "name": "量子",
+        "hosts": [
+          "vip.lz",
+          "hd.lz"
+        ],
+        "regex": [
+          "#EXT-X-DISCONTINUITY\\n#EXTINF:6.433333,\\n(?:.|\\n)*?#EXT-X-DISCONTINUITY\\n",
+          "#EXTINF:\\d+\\.\\d+?,\\n.*?1o.*?.ts\\n"
+        ]
+      },
+      {
+        "name": "非凡",
+        "hosts": [
+          "vip.ffzy",
+          "hd.ffzy"
+        ],
+        "regex": [
+          "#EXT-X-DISCONTINUITY\\n#EXTINF:6.666667,\\n(?:.|\\n)*?#EXT-X-DISCONTINUITY\\n",
+          "#EXTINF:\\d+\\.\\d+?,\\n.*?1o.*?.ts\\n"
+        ]
+      }
+    ]
+  },
+  "QiQi": [
+    {
+      "jx": "http://110.42.2.247:880/analysis/json/?uid=2056&my=efjkmvBGHILMSUWXY0&url=",
+      "jxfrom": "other",
+      "gs": "url",
+      "erro": "无url"
+    }
+  ],
+  "Bili": {
+    "cookie": "https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/txt/cookie.txt",
+    "category": "健身,刘畊宏 9月21日|相声,相声小品"
+  },
+  "Zhaozy": {
+    "username": "Moaner1300",
+    "password": "wCM8Xg!Hn$cf"
+  },
+  "Zhibo": [
+    {
+      "pf": "douyu",
+      "id": "208",
+      "name": "斗鱼-一起看"
+    },
+    {
+      "pf": "bilibili",
+      "id": "6",
+      "name": "B站-单机游戏"
+    },
+    {
+      "pf": "huya",
+      "id": "2135",
+      "name": "虎牙-一起看"
+    },
+    {
+      "pf": "sport",
+      "id": "sport",
+      "name": "体育-全部"
+    }
+  ]
+}

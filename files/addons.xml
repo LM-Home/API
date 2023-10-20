@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<addons>
+<addon id="plugin.video.ysdqg"
+version="1.5.9"
+name="影视大全(改)"
+provider-name="ysdqg">
+<requires>
+  <import addon="xbmc.python" version="3.0.0"/>
+  <import addon="inputstream.adaptive" version="20.3.5"/>
+  <import addon="script.module.requests" version="2.22.0"/>
+  <import addon="script.module.beautifulsoup4" version="4.9.3"/>
+  <import addon="script.module.qrcode" version="5.3"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.service" library="service.py" />
+<extension point="xbmc.addon.metadata">
+  <summary lang="en"></summary>
+  <description lang="en_GB"></description>
+  <disclaimer lang="en_GB"></disclaimer>
+  <assets>
+    <icon>resources/images/icon.png</icon>
+    <fanart>resources/images/fanart.jpg</fanart>
+  </assets>
+  <news></news>
+</extension>
+</addon>
+
+<addon id="repository.xbmc-addons-YSDQG"
+        name="xbmc-addons-YSDQG"
+        version="1.0.1"
+        provider-name="xbmc-addons-YSDQG">
+    <extension point="xbmc.addon.repository"
+            name="xbmc-addons-YSDQG Add-ons">
+        <dir minversion="19.0.0">
+            <info compressed="true">https://cjk.lm317379829.repl.co/CJK/addons.xml</info>
+            <checksum>https://cjk.lm317379829.repl.co/CJK/addons.xml.md5</checksum>
+            <datadir zip="true">https://cjk.lm317379829.repl.co/CJK/repo/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>xbmc-addons-YSDQG</summary>
+        <summary lang="zh">影视大全(改)的插件库</summary>
+        <description>Download and install add-ons from xbmc-addons-YSDQG addon repository.</description>
+        <description lang="zh">从xbmc-addons-YSDQG库下载安装插件。</description>
+        <disclaimer>lm317379829 did not make all the add-ons on this repository and is not responsible for their content</disclaimer>
+        <disclaimer lang="zh">本库中扩展功能模块不完全由lm317379829开发，对他人提交的内容不承担责任</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.subtitles.zimukux" name="ZiMuKuX" version="0.2.0" provider-name="pizzamx">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.beautifulsoup4" version="4.6.2"/>
+        <import addon="script.module.kodi-six"/>
+        <import addon="vfs.rar" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.22.0"/>
+    </requires>
+    <extension point="xbmc.subtitle.module" library="resources/lib/addon_entry.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">zimuku subtitle</summary>
+        <summary lang="zh_CN">字幕库</summary>
+        <description lang="en_GB">Search and download subtitles from ZiMuKu</description>
+        <description lang="zh_CN">从「字幕库」下载字幕（网址经常变）。感谢 taxigps 大神的原创，这是一个衍生品</description>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="service.autostrat" name="Auto Start Plugin" version="1.0.0" provider-name="Auto Start Plugin">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.service" library="autostrat.py">
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Auto Start Plugin</summary>
+		<description lang="en_GB">The Auto Start Plugin will automatically be run on Kodi startup.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+	</extension>
+</addon>
+
+<addon id="skin.Estuary-YSDQG" version="1.0.0" name="Estuary-YSDQG" provider-name="phil65, Ichabod Fletchman">
+	<requires>
+		<import addon="xbmc.gui" version="5.16.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+			<screenshot>resources/screenshot-06.jpg</screenshot>
+			<screenshot>resources/screenshot-07.jpg</screenshot>
+			<screenshot>resources/screenshot-08.jpg</screenshot>
+		</assets>
+		<summary lang="en_GB">Estuary-YSDQG skin by phil65. (Kodi&apos;s default skin) modified to adapte YSDQG</summary>
+		<summary lang="zh_CN">phil65 开发的 Estuary 皮肤（Kodi 的默认皮肤）的YSDQG修改版。</summary>
+		<description lang="en_GB">Estuary-YSDQG is the modified version of default skin for Kodi 17.0 and above. It attempts to be easy for first time Kodi users to understand and use.</description>
+		<description lang="zh_CN">Estuary-YSDQG 是 Kodi 17.0 的默认皮肤Estuary的修改版。它力求使首次使用 Kodi 的用户易于上手。</description>
+	</extension>
+</addon>
+
+</addons>
